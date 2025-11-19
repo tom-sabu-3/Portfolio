@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tom Sabu — Portfolio</title>
+  <meta name="description" content="Tom Sabu — Software Support & Junior Developer portfolio. Projects: AgDesk, University Website, React Native E-commerce, TheHandyKart." />
+  <!-- Tailwind CDN for quick styling -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* small custom tweaks */
+    .glass { background: rgba(255,255,255,0.06); backdrop-filter: blur(6px); }
+    .accent { color: #06b6d4; }
+    .hero-bg { background: linear-gradient(135deg,#0f172a 0%, #001f2d 60%);} 
+    .card-border { border: 1px solid rgba(255,255,255,0.06); }
+  </style>
+</head>
+<body class="antialiased text-slate-100 bg-gradient-to-b from-slate-900 via-slate-950 to-black">
+  <header class="hero-bg py-12">
+    <div class="container mx-auto px-6">
+      <div class="flex items-center justify-between gap-6">
+        <div>
+          <h1 class="text-4xl font-extrabold">Tom Sabu</h1>
+          <p class="mt-2 text-slate-300">Software Support & Junior Developer — Geospatial, Full-stack & Mobile</p>
+          <div class="mt-4 flex gap-3 items-center">
+            <a href="#projects" class="px-4 py-2 rounded-lg bg-cyan-600 text-black font-semibold">View Projects</a>
+            <a href="#contact" class="px-4 py-2 rounded-lg border border-slate-700">Contact</a>
+          </div>
+        </div>
+        <div class="text-right">
+          <p class="text-slate-400">Brisbane, QLD</p>
+          <p class="text-slate-400 mt-2">Email: <a class="accent" href="mailto:tomxs91@gmail.com">tomxs91@gmail.com</a></p>
+          <p class="text-slate-400 mt-2">Phone: +61 478 360 411</p>
+          <div class="mt-4 flex gap-2 justify-end">
+            <a target="_blank" rel="noopener" href="https://github.com/your-github" class="px-3 py-2 rounded-md glass">GitHub</a>
+            <a target="_blank" rel="noopener" href="#" class="px-3 py-2 rounded-md glass">LinkedIn</a>
+            <a download href="#" class="px-3 py-2 rounded-md glass">Download CV</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-6 -mt-10">
+    <!-- About -->
+    <section id="about" class="mb-10">
+      <div class="glass p-6 rounded-2xl card-border">
+        <div class="grid md:grid-cols-3 gap-6 items-center">
+          <div class="md:col-span-2">
+            <h2 class="text-2xl font-bold">About</h2>
+            <p class="mt-3 text-slate-300">I build full-stack web apps, geospatial dashboards and mobile apps. I enjoy turning satellite imagery and data into actionable tools for land managers and building reliable, production-ready APIs and interfaces.</p>
+            <ul class="mt-4 grid sm:grid-cols-2 gap-2 text-sm text-slate-300">
+              <li><strong>Skills:</strong> Python, Django, Flask, TensorFlow, PyTorch</li>
+              <li><strong>Geospatial:</strong> Leaflet, PostGIS, GDAL, Sentinel Hub</li>
+              <li><strong>Frontend:</strong> Tailwind, HTMX, React Native</li>
+              <li><strong>Other:</strong> Celery, Redis, Docker, Git</li>
+            </ul>
+          </div>
+          <div class="text-center">
+            <div class="w-40 h-40 rounded-full bg-gradient-to-br from-cyan-500 to-sky-700 mx-auto flex items-center justify-center ring-2 ring-slate-700">
+              <span class="text-2xl font-bold">TS</span>
+            </div>
+            <p class="mt-3 text-slate-400 text-sm">Master of IT — Griffith University</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="mb-12">
+      <h2 class="text-3xl font-bold mb-4">Projects</h2>
+
+      <!-- Featured projects -->
+      <div class="grid md:grid-cols-2 gap-6 mb-8">
+        <!-- AgDesk -->
+        <article class="p-6 rounded-2xl glass card-border">
+          <h3 class="text-2xl font-semibold">OreFox — AgDesk FarmData</h3>
+          <p class="mt-2 text-slate-300">AI-Powered Tree Monitoring & Carbon Credit Platform — Mar 2025 — Jun 2025</p>
+          <p class="mt-4 text-slate-300">Developed a comprehensive geospatial monitoring and prediction system for agricultural management, integrating satellite imagery analysis with machine learning capabilities.</p>
+          <ul class="mt-4 list-disc pl-5 text-slate-300">
+            <li>Interactive geospatial dashboard using Django + Leaflet with NDVI overlays</li>
+            <li>Automated satellite processing (Sentinel Hub APIs) + multispectral imagery</li>
+            <li>ML for species classification & biomass estimation (TensorFlow, PyTorch)</li>
+            <li>Asynchronous processing with Celery + Redis; Flask ML API with server-sent events</li>
+            <li>PostGIS for geospatial storage and spatial querying</li>
+          </ul>
+          <p class="mt-4 text-sm text-slate-400"><strong>Technologies:</strong> Python, Django, HTMX, Leaflet, GDAL, PostGIS, TensorFlow, PyTorch, Celery, Redis, Flask, Sentinel Hub, Shapely, Rasterio</p>
+          <div class="mt-4 flex gap-3">
+            <a target="_blank" rel="noopener" href="#" class="px-4 py-2 rounded-lg bg-cyan-600 text-black">Demo</a>
+            <a target="_blank" rel="noopener" href="#" class="px-4 py-2 rounded-lg border">GitHub</a>
+          </div>
+        </article>
+
+        <!-- University Website -->
+        <article class="p-6 rounded-2xl glass card-border">
+          <h3 class="text-2xl font-semibold">University Website</h3>
+          <p class="mt-2 text-slate-300">Sep 2024 — Oct 2024</p>
+          <p class="mt-4 text-slate-300">Full-stack web application built with Laravel to manage academic resources, student portals and administrative tools.</p>
+          <ul class="mt-4 list-disc pl-5 text-slate-300">
+            <li>Laravel MVC architecture with role-based access (students, faculty, admin)</li>
+            <li>Responsive UI with Tailwind; dynamic content management for courses & announcements</li>
+            <li>RESTful APIs, Eloquent ORM-driven models and secure authentication</li>
+          </ul>
+          <p class="mt-4 text-sm text-slate-400"><strong>Technologies:</strong> PHP, Laravel, MySQL, Tailwind, Vite, JavaScript</p>
+          <div class="mt-4 flex gap-3">
+            <a target="_blank" rel="noopener" href="#" class="px-4 py-2 rounded-lg bg-cyan-600 text-black">Live</a>
+            <a target="_blank" rel="noopener" href="#" class="px-4 py-2 rounded-lg border">GitHub</a>
+          </div>
+        </article>
+      </div>
+
+      <!-- Other projects -->
+      <div class="grid md:grid-cols-2 gap-6">
+        <!-- React Native App -->
+        <article class="p-4 rounded-xl glass card-border">
+          <h4 class="text-xl font-semibold">E-commerce Mobile App (React Native)</h4>
+          <p class="mt-2 text-slate-300">Apr 2024 — May 2024</p>
+          <p class="mt-3 text-slate-300 text-sm">A full-featured shopping app with authentication, cart management and order tracking.</p>
+          <p class="mt-3 text-sm text-slate-400"><strong>Tech:</strong> React Native, Redux/Context, REST APIs</p>
+          <div class="mt-3 flex gap-2">
+            <a target="_blank" rel="noopener" href="#" class="px-3 py-2 rounded-md border">Repo</a>
+          </div>
+        </article>
+
+        <!-- HandyKart -->
+        <article class="p-4 rounded-xl glass card-border">
+          <h4 class="text-xl font-semibold">TheHandyKart — E-commerce Platform</h4>
+          <p class="mt-2 text-slate-300">Feb 2022 — Apr 2022</p>
+          <p class="mt-3 text-slate-300 text-sm">Built during the COVID-19 pandemic to provide essentials; includes shopping cart, payment integration and admin dashboard.</p>
+          <p class="mt-3 text-sm text-slate-400"><strong>Tech:</strong> HTML, MySQL, JavaScript, CSS</p>
+          <div class="mt-3 flex gap-2">
+            <a target="_blank" rel="noopener" href="#" class="px-3 py-2 rounded-md border">Demo</a>
+            <a target="_blank" rel="noopener" href="#" class="px-3 py-2 rounded-md border">Repo</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Skills & Education -->
+    <section id="skills" class="mb-12">
+      <div class="glass p-6 rounded-2xl card-border">
+        <h3 class="text-2xl font-bold">Skills & Education</h3>
+        <div class="mt-4 grid md:grid-cols-3 gap-4 text-slate-300">
+          <div>
+            <h4 class="font-semibold">Technical</h4>
+            <ul class="mt-2 text-sm list-disc pl-5">
+              <li>Python, Django, Flask</li>
+              <li>TensorFlow, PyTorch, ML Pipelines</li>
+              <li>PostGIS, GDAL, Rasterio</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold">Frontend & Mobile</h4>
+            <ul class="mt-2 text-sm list-disc pl-5">
+              <li>Tailwind, HTMX, Leaflet</li>
+              <li>React Native, JavaScript</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold">Other</h4>
+            <ul class="mt-2 text-sm list-disc pl-5">
+              <li>Celery, Redis, Docker, Git</li>
+              <li>Agile workflows & testing</li>
+            </ul>
+          </div>
+        </div>
+        <p class="mt-4 text-slate-400 text-sm">Education: Master of Information Technology — Griffith University (Completed Jun 2025)</p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="mb-20">
+      <div class="glass p-6 rounded-2xl card-border">
+        <h3 class="text-2xl font-bold">Contact</h3>
+        <p class="mt-3 text-slate-300">Interested in hiring or collaborating? Send a message or email me directly.</p>
+        <form class="mt-4 grid md:grid-cols-2 gap-4">
+          <input class="p-3 rounded-md bg-transparent border border-slate-700" placeholder="Your name" />
+          <input class="p-3 rounded-md bg-transparent border border-slate-700" placeholder="Email" />
+          <input class="p-3 rounded-md bg-transparent border border-slate-700 md:col-span-2" placeholder="Subject" />
+          <textarea class="p-3 rounded-md bg-transparent border border-slate-700 md:col-span-2" rows="4" placeholder="Message"></textarea>
+          <div class="md:col-span-2 text-right">
+            <button class="px-5 py-2 rounded-lg bg-cyan-600 text-black">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="py-8 text-center text-slate-500 text-sm">
+      <p>Made with ❤️ by Tom Sabu — Built with Tailwind CSS.</p>
+    </footer>
+  </main>
+</body>
+</html>
