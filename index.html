@@ -56,6 +56,7 @@
   </div>
 
   <main class="max-w-6xl mx-auto px-6 pb-20">
+    <!-- About -->
     <section id="about" class="glass rounded-3xl p-8 -mt-12 relative z-10 shadow-2xl shadow-cyan-500/10">
       <div class="grid md:grid-cols-[1.5fr,0.5fr] gap-8 items-center">
         <div>
@@ -93,42 +94,84 @@
       </div>
     </section>
 
+    <!-- Projects -->
     <section id="projects" class="mt-16 space-y-10">
       <div class="flex items-center justify-between">
         <h2 class="text-3xl font-bold">Projects</h2>
-        <span class="text-sm text-slate-400">Recent work</span>
+        <span class="text-sm text-slate-400">Selected highlights · 2022–2025</span>
       </div>
 
-      <article class="glass p-8 rounded-3xl border border-cyan-500/30">
-        <div class="flex items-center gap-3 text-xs uppercase tracking-[0.3em] text-cyan-300">
-          <span class="h-px w-6 bg-cyan-300/60"></span> Web Application
-        </div>
-        <h3 class="mt-4 text-3xl font-semibold">AgDesk Dashboard (Student Project)</h3>
-        <p class="mt-4 text-slate-300">Developed a full-stack dashboard using Django, Leaflet, and APIs to display map data, handle form input, and fetch model predictions.</p>
-        <ul class="mt-6 grid md:grid-cols-2 gap-3 text-sm text-slate-200 list-disc pl-5">
-          <li>Interactive map view using Leaflet</li>
-          <li>Django backend with API routing</li>
-          <li>Integrated Flask ML API for predictions</li>
-          <li>Responsive UI built with Tailwind</li>
-        </ul>
-        <div class="mt-6 flex gap-3">
-          <a class="px-4 py-2 rounded-xl bg-cyan-400 text-slate-950 font-semibold" href="#" target="_blank">Demo</a>
-          <a class="px-4 py-2 rounded-xl border border-slate-600" href="#" target="_blank">Code</a>
-        </div>
-      </article>
+      <!-- Featured Projects (Top 2) -->
+      <div class="grid md:grid-cols-2 gap-6">
+        <article class="glass p-8 rounded-3xl border border-cyan-500/30">
+          <div class="flex items-center gap-3 text-xs uppercase tracking-[0.3em] text-cyan-300">
+            <span class="h-px w-6 bg-cyan-300/60"></span> AI + Geospatial
+          </div>
+          <div class="mt-4 flex flex-wrap gap-4 items baseline">
+            <h3 class="text-3xl font-semibold">OreFox — AgDesk FarmData</h3>
+            <p class="text-sm text-slate-400">Mar 2025 – Jun 2025</p>
+          </div>
+          <p class="mt-4 text-slate-300">Built a geospatial monitoring and prediction platform using Django, Leaflet and ML APIs to deliver vegetation health metrics and simple workflows for land managers.</p>
+          <ul class="mt-6 grid md:grid-cols-2 gap-3 text-sm text-slate-200 list-disc pl-5">
+            <li>Interactive NDVI overlays and map tooling with Leaflet & HTMX</li>
+            <li>Automated Sentinel processing pipelines and GDAL preprocessing</li>
+            <li>ML inference via Flask microservice for species & biomass estimation</li>
+            <li>PostGIS spatial queries and Celery background processing</li>
+          </ul>
+          <p class="mt-4 text-sm text-slate-400"><strong>Stack:</strong> Python, Django, HTMX, Leaflet, PostGIS, GDAL, Flask, TensorFlow</p>
+          <div class="mt-6 flex gap-3">
+            <a class="px-4 py-2 rounded-xl bg-cyan-400 text-slate-950 font-semibold" href="#" target="_blank">Demo</a>
+            <a class="px-4 py-2 rounded-xl border border-slate-600" href="#" target="_blank">Code</a>
+          </div>
+        </article>
 
-      <article class="glass p-8 rounded-3xl">
-        <h3 class="text-2xl font-semibold">HandyKart E-commerce Platform</h3>
-        <p class="text-slate-400 text-sm">2022</p>
-        <p class="mt-4 text-slate-300">Built during COVID to support essential goods delivery. Implemented auth, product listings, and admin controls.</p>
-        <ul class="mt-5 list-disc pl-5 space-y-2 text-sm text-slate-200">
-          <li>User authentication & cart system</li>
-          <li>Admin dashboard for managing orders</li>
-          <li>Mobile-first responsive UI</li>
-        </ul>
-      </article>
+        <article class="glass p-8 rounded-3xl border border-slate-700">
+          <div class="flex gap-2 text-xs uppercase tracking-[0.3em] text-slate-400">
+            <span class="h-px w-6 bg-slate-600"></span> Laravel Platform
+          </div>
+          <div class="mt-4 flex flex-wrap gap-4 items baseline">
+            <h3 class="text-2xl font-semibold">University Website — Digital Backbone</h3>
+            <p class="text-sm text-slate-400">Sep 2024 – Oct 2024</p>
+          </div>
+          <p class="mt-4 text-slate-300">Developed a Laravel-powered site with role-based dashboards, dynamic content management, and APIs for a companion mobile app.</p>
+          <ul class="mt-5 list-disc pl-5 space-y-2 text-sm text-slate-200">
+            <li>Role-based auth and admin tooling</li>
+            <li>Responsive UI built with Tailwind components</li>
+            <li>REST API for mobile integration and data sync</li>
+          </ul>
+          <div class="mt-5 flex gap-3">
+            <a class="px-4 py-2 rounded-xl bg-cyan-400/90 text-slate-950 font-semibold" href="#" target="_blank">Live Site</a>
+            <a class="px-4 py-2 rounded-xl border border-slate-600" href="#" target="_blank">Repository</a>
+          </div>
+        </article>
+      </div>
+
+      <!-- Additional Projects (Bottom Section) -->
+      <div class="grid md:grid-cols-2 gap-6">
+        <article class="glass p-6 rounded-2xl">
+          <h4 class="text-xl font-semibold">React Native — E-commerce App</h4>
+          <p class="text-slate-400 text-sm">Apr 2024 – May 2024</p>
+          <p class="mt-3 text-sm text-slate-300">Mobile shopping app with authentication, cart syncing, and clean UI — built with React Native and Redux/Context for state management.</p>
+          <p class="mt-3 text-xs uppercase tracking-[0.3em] text-cyan-300">React Native · Redux · REST</p>
+          <div class="mt-3">
+            <a class="px-3 py-2 rounded-md border border-slate-600" href="#">Repo</a>
+          </div>
+        </article>
+
+        <article class="glass p-6 rounded-2xl">
+          <h4 class="text-xl font-semibold">TheHandyKart — E-commerce Platform</h4>
+          <p class="text-slate-400 text-sm">Feb 2022 – Apr 2022</p>
+          <p class="mt-3 text-sm text-slate-300">Rapid e-commerce launch during COVID handling orders and payments with a simple admin dashboard and responsive site.</p>
+          <p class="mt-3 text-xs uppercase tracking-[0.3em] text-cyan-300">HTML · JavaScript · MySQL</p>
+          <div class="mt-3">
+            <a class="px-3 py-2 rounded-md border border-slate-600" href="#">Demo</a>
+            <a class="px-3 py-2 rounded-md border border-slate-600" href="#">Repo</a>
+          </div>
+        </article>
+      </div>
     </section>
 
+    <!-- Skills -->
     <section id="skills" class="mt-16 glass rounded-3xl p-8">
       <h2 class="text-3xl font-bold">Technical Skills</h2>
       <div class="mt-8 grid md:grid-cols-3 gap-6 text-sm text-slate-200">
@@ -160,4 +203,32 @@
       <p class="mt-6 text-sm text-slate-400">Education: Master of IT, Griffith University (2025)</p>
     </section>
 
-    <section id="
+    <!-- Contact -->
+    <section id="contact" class="mt-16 glass rounded-3xl p-8">
+      <div class="grid md:grid-cols-[1.1fr,0.9fr] gap-10">
+        <div>
+          <h2 class="text-3xl font-bold">Let’s build something useful</h2>
+          <p class="mt-4 text-slate-300">I’m open to IT support, helpdesk, junior developer or QA roles. I quickly adapt to new tools and environments — whether that’s assisting users, debugging applications, or shipping small features.</p>
+          <ul class="mt-6 text-sm text-slate-400 space-y-2">
+            <li>Available for full-time or contract (min 3 months)</li>
+            <li>Timezone overlap: AEST · willing to travel</li>
+            <li>References available on request</li>
+          </ul>
+        </div>
+        <form class="space-y-4">
+          <input class="w-full p-3 rounded-2xl bg-slate-900/60 border border-slate-800 focus:border-cyan-400 outline-none" placeholder="Name" />
+          <input class="w-full p-3 rounded-2xl bg-slate-900/60 border border-slate-800 focus:border-cyan-400 outline-none" placeholder="Email or LinkedIn" />
+          <input class="w-full p-3 rounded-2xl bg-slate-900/60 border border-slate-800 focus:border-cyan-400 outline-none" placeholder="Project or role" />
+          <textarea rows="4" class="w-full p-3 rounded-2xl bg-slate-900/60 border border-slate-800 focus:border-cyan-400 outline-none" placeholder="How can I help?"></textarea>
+          <button type="button" class="w-full px-5 py-3 rounded-2xl bg-cyan-400 text-slate-950 font-semibold hover:-translate-y-0.5 transition">Send message</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="py-10 text-center text-slate-500 text-sm border-t border-slate-900">
+      Made with satellite data, coffee, and Tailwind.
+    </footer>
+  </main>
+
+</body>
+</html>
